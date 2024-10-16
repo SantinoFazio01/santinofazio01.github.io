@@ -81,6 +81,7 @@ body {
     padding-left: 70px;
     height: auto; /* Mantiene la proporción de la imagen */
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
     color: #706d6d;
     }
 
@@ -89,7 +90,7 @@ body {
 }
 .boton-logo{
     position: relative;
-    top: 720px;
+    top: 680px;
     margin-left: 20px;
     font-size: 1.3em;
     font-family: 'Montserrat', sans-serif;
@@ -115,15 +116,15 @@ body {
     }
 
     .nav-list button {
-        font-size: 1.3em;
-        width: 100%; /* Los botones ocupan todo el ancho disponible */
+      font-size: 1.3em;
+      width: 100%; /* Los botones ocupan todo el ancho disponible */
     }
     #img-banner {
-        position: absolute;
-        top: 0; /* Posicionada en la parte superior de la página */
-        right: 0; /* Alineada al lado derecho de la página */
-       height: auto;
-       width: 62%;
+      position: absolute;
+      top: 0; /* Posicionada en la parte superior de la página */
+      right: 0; /* Alineada al lado derecho de la página */
+      height: auto;
+      width: 62%;
       }
     .img-logo {
         position: absolute;
@@ -137,7 +138,7 @@ body {
       }
     .p-img-logo {
         position: absolute;
-        top: 40%; /* Posicionada en la parte superior de la página */
+        top: 45%; /* Posicionada en la parte superior de la página */
         text-align: left;
         left: 0; /* Alineada al lado derecho de la página */
         padding-left: 50px;
@@ -151,12 +152,12 @@ body {
       }
 
     #botones-descarga{
-        padding-top: 110px;
+        padding-top: 90px;
         padding-left: 40px;
     }
     .boton-logo{
         position: relative;
-        top: 410px;
+        top: 390px;
         font-size: 0.8em;
     }
 
@@ -197,7 +198,7 @@ body {
       .p-img-logo {
         font-size: 1em;
         position: absolute;
-        top: 27%; /* Posicionada en la parte superior de la página */
+        top: 38%; /* Posicionada en la parte superior de la página */
         text-align: center;
         left: 0; /* Alineada al lado derecho de la página */
         padding-left: 10px;
@@ -216,7 +217,7 @@ body {
     }
     .boton-logo{
         position: relative;
-        top: 250px;
+        top: 270px;
         font-size: 0.6em;
         margin-left: 0;
     }
@@ -225,7 +226,7 @@ body {
 @media (max-width: 550px) {
     .p-img-logo {
         position: absolute;
-        top: 22%; /* Posicionada en la parte superior de la página */
+        top: 19%; /* Posicionada en la parte superior de la página */
         text-align: center;
         left: 0; /* Alineada al lado derecho de la página */
         padding-left: 10px;
@@ -260,14 +261,14 @@ body {
     #p-span{
     display: grid;
     font-family: 'Montserrat', sans-serif;
-   
+    width: 50%;
     }
     .p-img-logo {
         position: absolute;
-        top: 150px; /* Posicionada en la parte superior de la página */
+        top: 125px; /* Posicionada en la parte superior de la página */
         text-align: left;
         left: 0;
-        padding-left: 10px;
+        padding-left: 30px;
         width: 60%;
         height: auto; /* Mantiene la proporción de la imagen */
     
@@ -277,7 +278,7 @@ body {
     }
     .boton-logo{
         position: relative;
-        top: 80px;
+        top: 95px;
         font-size: 0.3em;
     }
 }
@@ -285,10 +286,10 @@ body {
 @media (max-width:350px) {
     .p-img-logo {
         position: absolute;
-        top: 125px; /* Posicionada en la parte superior de la página */
+        top: 105px; /* Posicionada en la parte superior de la página */
         text-align: center;
-        padding-left: 5px;
-        width: 50%;
+        padding-left: 25px;
+        width: 65%;
         height: auto; /* Mantiene la proporción de la imagen */
     
       }
@@ -346,7 +347,7 @@ body {
   /* Media query for responsive design */
   @media (max-width: 1200px) {
     .cuadrados {
-       margin-top: 650px;
+      margin-top: 650px;
     }
     .cuadro {
       width: calc(25% - 40px);
@@ -356,7 +357,7 @@ body {
   @media (max-width: 700px) {
     .cuadrados {
         margin-top: 500px;
-     }
+    }
     .cuadro {
       width: 60%;
     }
@@ -365,7 +366,7 @@ body {
   @media (max-width: 480px) {
     .cuadrados {
         margin-top: 350px;
-     }
+    }
     .cuadro {
       width: 60%;
     }
@@ -473,7 +474,7 @@ body {
   #contenedor-iconos {
     display: flex;
     flex-direction: column; /* Organiza los iconos en una columna */
-    padding-top: 500px;
+    padding-top: 400px;
     width: 50%;
   }
   
@@ -485,7 +486,7 @@ body {
   
   .img-iconos-derechaDelCelu {
     margin-right: 15px; /* Espacio entre el icono y el texto */
-    max-width: 90px; /* Limitar el tamaño del icono */
+    max-width: 150px; /* Limitar el tamaño del icono */
   }
   
   .icono2 div {
@@ -505,7 +506,7 @@ body {
 @media (max-width: 1100px) {
   #contenedor-iconos {
     padding-top: 200px; /* Reducir el padding en pantallas más pequeñas */
-    max-width: 50vh;
+    max-width: 70vh;
   }
   
   .icono2 {
@@ -513,7 +514,7 @@ body {
   }
 
   .img-iconos-derechaDelCelu {
-    max-width: 40px; /* Ajustar el tamaño del icono */
+    max-width: 80px; /* Ajustar el tamaño del icono */
   }
 }
 
@@ -529,7 +530,7 @@ body {
     }
   
     .img-iconos-derechaDelCelu {
-      max-width: 40px; /* Ajustar el tamaño del icono */
+      max-width: 60px; /* Ajustar el tamaño del icono */
     }
     h4, p {
       font-size: 1em;
@@ -553,6 +554,7 @@ body {
   
     .img-iconos-derechaDelCelu {
       margin-bottom: 10px; /* Espacio entre el icono y el texto */
+      max-width: 80px;
     }
   }
   /* Animaciones para imágenes e iconos (sin inicializar) */
