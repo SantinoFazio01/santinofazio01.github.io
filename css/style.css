@@ -138,11 +138,11 @@ body {
       }
     .p-img-logo {
         position: absolute;
-        top: 45%; /* Posicionada en la parte superior de la página */
+        top: 430px; /* Posicionada en la parte superior de la página */
         text-align: left;
         left: 0; /* Alineada al lado derecho de la página */
-        padding-left: 50px;
-        width: 45vh;
+        padding-left: 40px;
+        width: 30vh;
         height: auto; /* Mantiene la proporción de la imagen */
     
       }
@@ -152,13 +152,13 @@ body {
       }
 
     #botones-descarga{
-        padding-top: 90px;
-        padding-left: 40px;
+        padding-top: 190px;
+        padding-left: 60px;
     }
     .boton-logo{
         position: relative;
-        top: 390px;
-        font-size: 0.8em;
+        top: 400px;
+        font-size: 0.9em;
     }
 
 }
@@ -213,6 +213,7 @@ body {
 
     #botones-descarga{
         padding-left: 60px;
+        padding-top: 90px;
         
     }
     .boton-logo{
@@ -235,12 +236,12 @@ body {
     
       }
       #botones-descarga{
-        padding-left: 40px;
+        padding-left: 30px;
         
     }
     .boton-logo{
         position: relative;
-        top: 250px;
+        top: 295px;
         font-size: 0.6em;
         margin-left: 0;
     }
@@ -265,7 +266,7 @@ body {
     }
     .p-img-logo {
         position: absolute;
-        top: 125px; /* Posicionada en la parte superior de la página */
+        top: 160px; /* Posicionada en la parte superior de la página */
         text-align: left;
         left: 0;
         padding-left: 30px;
@@ -278,7 +279,7 @@ body {
     }
     .boton-logo{
         position: relative;
-        top: 95px;
+        top: 135px;
         font-size: 0.3em;
     }
 }
@@ -366,6 +367,14 @@ body {
   @media (max-width: 480px) {
     .cuadrados {
         margin-top: 350px;
+    }
+    .cuadro {
+      width: 60%;
+    }
+  }
+  @media (max-width: 440px) {
+    .cuadrados {
+        margin-top: 210px;
     }
     .cuadro {
       width: 60%;
@@ -472,9 +481,10 @@ body {
 
 
   #contenedor-iconos {
+    padding-left: 80px;
     display: flex;
     flex-direction: column; /* Organiza los iconos en una columna */
-    padding-top: 400px;
+    padding-top: 500px;
     width: 50%;
   }
   
@@ -505,7 +515,7 @@ body {
 /* Responsividad */
 @media (max-width: 1100px) {
   #contenedor-iconos {
-    padding-top: 200px; /* Reducir el padding en pantallas más pequeñas */
+    padding-top: 140px; /* Reducir el padding en pantallas más pequeñas */
     max-width: 70vh;
   }
   
@@ -516,6 +526,10 @@ body {
   .img-iconos-derechaDelCelu {
     max-width: 80px; /* Ajustar el tamaño del icono */
   }
+  h4, p {
+    font-size: 1.2em;
+    margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
+  }
 }
 
 
@@ -523,6 +537,8 @@ body {
   @media (max-width: 768px) {
     #contenedor-iconos {
       padding-top: 100px; /* Reducir el padding en pantallas más pequeñas */
+      
+    padding-left: 0px;
     }
     
     .icono2 {
@@ -556,6 +572,22 @@ body {
       margin-bottom: 10px; /* Espacio entre el icono y el texto */
       max-width: 80px;
     }
+    h4, p {
+      font-size: 1em;
+      margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
+      align-items: center;
+      max-width: 75%;
+    }
+    .textos-de-iconos1{
+      max-width: 80%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media (max-width: 450px) {
+   
+    
   }
   /* Animaciones para imágenes e iconos (sin inicializar) */
 .imagnes-lado-izquierdo,
