@@ -152,7 +152,7 @@ body {
       }
 
     #botones-descarga{
-        padding-top: 190px;
+        padding-top: 240px;
         padding-left: 60px;
     }
     .boton-logo{
@@ -608,3 +608,134 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
+
+
+/*Equipo*/
+
+.nuestro-equipo {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.txt-nuestro-equipo {
+  text-align: center;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .txt-nuestro-equipo {
+    width: 80%;
+  }
+}
+
+
+.cuadradosEquipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cuadroEquipo {
+  background-color: rgb(25, 22, 228);
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 15px;
+  width: calc(20% - 35px);
+  opacity: 1; /* inicialmente oculto */
+  transform: translateY(10px); /* inicialmente fuera de la pantalla */
+  transition: opacity 0.5s, transform 0.5s; /* add transition effect */
+  text-align: center;
+  font-size: 0.6em;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.scroll-revealEquipo {
+  opacity: 1; /* mostrar cuando se scrollea */
+  transform: translateY(00.5s); /* mostrar en su posición original */
+}
+
+
+.cuadroEquipo:hover {
+  transform: scale(1.1); /* add hover effect */
+}
+
+.iconoEquipo {
+  border-radius:10px 10px 10px 10px;
+  width: 40%; /* ajusta el tamaño de la imagen */
+  height: 40%; /* ajusta el tamaño de la imagen */
+  margin-bottom: 10px;
+  text-align: center;
+  object-fit: cover; /* ajusta la imagen para que se adapte al tamaño */
+}
+
+.h2-cuadro-equipo{
+  color: white; 
+  font-size: 2em;
+}
+.p-cuadro-equipo{
+  max-width: 100%;
+  font-size: 1em;
+}
+
+/* Media query for responsive design */
+@media (max-width: 1200px) {
+  .cuadradosEquipo {
+    margin-top: 20px;
+  }
+  .cuadroEquipo {
+    width: calc(25% - 40px);
+  }
+  .h2-cuadro-equipo{
+    color: white; 
+    font-size: 2em;
+  }
+  .p-cuadro-equipo{
+    font-size: 1em;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 730px) {
+  .cuadradosEquipo {
+      margin-top: 20px;
+  }
+  .cuadroEquipo {
+    width: 60%;
+  }
+  .h2-cuadro-equipo{
+  color: white; 
+  font-size: 2em;
+  }
+  .p-cuadro-equipo{
+    font-size: 2em;
+    padding-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .cuadradosEquipo {
+      margin-top: 20px;
+  }
+  .cuadroEquipo {
+    width: 60%;
+  }
+  .h2-cuadro-equipo{
+  color: white; 
+  font-size: 2em;
+  }
+  .p-cuadro-equipo{
+    font-size:1em;
+    padding-bottom: 0px;
+  }
+
+}
+
