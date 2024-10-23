@@ -136,7 +136,7 @@
     <h1 id="contacto-h1">CONTACTO</h1>
     <div class="contact-container">
         <div class="contact-form">
-            <form id="contactForm" onsubmit="sendEmail(event)">
+            <form id="contactForm" onsubmit="openEmailClient(event)"> <!-- Cambié sendEmail a openEmailClient -->
                 <input type="text" id="name" name="name" placeholder=" Nombre" required>
                 <input type="email" id="email" name="email" placeholder=" Email" required>
                 <input type="tel" id="phone" name="phone" placeholder=" Teléfono" required>
