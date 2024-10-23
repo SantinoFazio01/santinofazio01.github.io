@@ -54,7 +54,7 @@ function openEmailClient(event) {
   const message = document.getElementById('message').value;
 
   // Construir el enlace mailto con los datos del formulario
-  const subject = encodeURIComponent(`Contacto de ${name}`);
+  const subject = encodeURIComponent(`Contacto de  ${name} ,enviado desde la web`);
   const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\nTeléfono: ${phone}\nMensaje: ${message}`);
   const recipient = "Ranchapp.ar@gmail.com"; // Reemplaza con tu dirección de correo
 
