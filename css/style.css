@@ -642,7 +642,7 @@ body {
 }
 
 .cuadroEquipo {
-  background-color: rgb(25, 22, 228);
+  background-color: #155da1;
   border-radius: 40px 40px 40px 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
