@@ -132,7 +132,23 @@
   </section>  
 
 
-    
+  <section id="CONTACT">
+    <h1 id="contacto-h1">CONTACTO</h1>
+    <div class="contact-container">
+        <div class="contact-form">
+            <form id="contactForm" onsubmit="sendEmail(event)">
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+                <textarea id="message" name="message" rows="4" placeholder="Mensaje" required></textarea>
+                <input type="text" id="honeypot" name="honeypot" style="display:none;">
+                <button type="submit">ENVIAR POR WHATSAPP</button>
+            </form>
+        </div>
+    </div>
+    <img src="img/footer-bg.png" alt="Fondo" id="bg-image">
+</section>
+
 
 
 

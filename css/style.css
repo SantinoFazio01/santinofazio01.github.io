@@ -738,4 +738,65 @@ body {
   }
 
 }
+/* Estilos de contacto */
+#contacto-h1 {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  z-index: 2; /* Asegúrate de que el contenedor esté por encima */
+position: relative;
+}
 
+.contact-container {
+  position: relative; /* Necesario para el posicionamiento del formulario */
+  max-width: 600px;
+  margin: 40px auto; /* Centrar el contenedor */
+  padding: 20px;
+  background-color: rgb(0, 0, 0); /* Fondo oscuro con opacidad */
+  border-radius: 20px;
+  box-shadow: #155da1 0px 0px 45px 0px;
+  z-index: 2; /* Asegúrate de que el contenedor esté por encima */
+}
+
+.contact-form {
+  margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%; /* Ajustar para que ocupe todo el ancho */
+  padding:10px 0px 10px 0px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #155da1;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #0d4b78; /* Color al pasar el ratón */
+}
+
+#bg-image {
+  position: relative;
+  width: 100%;
+  height: auto; /* Mantener la proporción de la imagen */
+  margin-top: -600px; /* Ajustar si es necesario para superponer */
+}
+
+#honeypot {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}

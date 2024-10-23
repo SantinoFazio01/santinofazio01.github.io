@@ -37,3 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
   elementosAnimados.forEach(elemento => observer.observe(elemento));
 });
 
+function sendEmail(event) {
+  event.preventDefault(); // Evitar el envío del formulario
+  // Aquí puedes incluir el código para enviar los datos a un email
+  // Puedes usar AJAX o una API de backend para el envío
+  alert("Formulario enviado con éxito!");
+}
