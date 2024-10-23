@@ -753,9 +753,9 @@ position: relative;
   max-width: 600px;
   margin: 40px auto; /* Centrar el contenedor */
   padding: 20px;
-  background-color: rgb(0, 0, 0); /* Fondo oscuro con opacidad */
+  background-color: #155da1; /* Fondo oscuro con opacidad */
   border-radius: 20px;
-  box-shadow: #155da1 0px 0px 45px 0px;
+  box-shadow: #155da1 0px 0px 55px 0px;
   z-index: 2; /* Asegúrate de que el contenedor esté por encima */
 }
 
@@ -775,8 +775,8 @@ position: relative;
 }
 
 .contact-form button[type="submit"] {
-  background-color: #155da1;
-  color: #fff;
+  background-color: #fff;
+  color:  #155da1;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -792,6 +792,7 @@ position: relative;
   width: 100%;
   height: auto; /* Mantener la proporción de la imagen */
   margin-top: -600px; /* Ajustar si es necesario para superponer */
+  bottom: 0;
 }
 
 #honeypot {
@@ -799,4 +800,24 @@ position: relative;
   visibility: hidden;
   opacity: 0;
   position: absolute;
+}
+
+@media (max-width: 800px) {
+  
+  .contact-container {
+    max-width: 400px;
+  }
+  
+
+
+}
+
+@media (max-width: 480px) {
+  
+  .contact-container {
+    max-width: 260px;
+   
+  }
+  
+
 }

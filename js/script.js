@@ -37,9 +37,30 @@ document.addEventListener('DOMContentLoaded', function () {
   elementosAnimados.forEach(elemento => observer.observe(elemento));
 });
 
-function sendEmail(event) {
+/*function sendEmail(event) {
   event.preventDefault(); // Evitar el envío del formulario
   // Aquí puedes incluir el código para enviar los datos a un email
   // Puedes usar AJAX o una API de backend para el envío
   alert("Formulario enviado con éxito!");
+}*/
+
+function openEmailClient(event) {
+  event.preventDefault(); // Evitar el comportamiento predeterminado del formulario
+
+  // Recoger los datos del formulario
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
+
+  // Construir el enlace mailto con los datos del formulario
+  const subject = encodeURIComponent(`Contacto de ${name}`);
+  const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\nTeléfono: ${phone}\nMensaje: ${message}`);
+  const recipient = "Ranchapp.ar@gmail.com"; // Reemplaza con tu dirección de correo
+
+  // Crear el enlace mailto
+  const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+  // Abrir el cliente de correo del usuario
+  window.location.href = mailtoLink;
 }
