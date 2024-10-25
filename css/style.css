@@ -1,522 +1,545 @@
 body {
-    background: #fff;
-    color: black;
-    margin: 0;
-    padding-top: 0;
-    font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  color: black;
+  margin: 0;
+  padding-top: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilo del título */
 #ranchaapH1 {
-    padding-top: 10px;
-    padding-right: 30px;
-    font-size: 2em;
-    color: #000000;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 10px;
+  padding-right: 30px;
+  font-size: 2em;
+  color: #000000;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .navbar {
-    display: flex; /* Flexbox para alinear horizontalmente */
-    justify-content: center; /* Centra los botones horizontalmente */
-    background-color: transparent; /* Fondo transparente */
-    padding: 10px 0; /* Espaciado vertical */
-    position: fixed; /* Añadido para hacerla fija */
-    top: 0; /* Asegura que esté en la parte superior */
-    width: 100%; /* Para que ocupe todo el ancho */
-    z-index: 1000; /* Asegura que esté sobre otros elementos */
-  }
-  
-  /* Estilos para la lista */
-  .nav-list {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    display: grid; /* Usa CSS Grid para organizar los botones */
-    grid-template-columns: repeat(3, auto); /* Tres columnas para los botones */
-    gap: 10px; /* Espaciado entre botones */
-    background: #155da1; /* Color de fondo para el área de botones */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 35px; /* Bordes redondeados */
-    box-shadow: 3px 3px 70px rgb(248, 247, 247);
+  display: flex; /* Flexbox para alinear horizontalmente */
+  justify-content: center; /* Centra los botones horizontalmente */
+  background-color: transparent; /* Fondo transparente */
+  padding: 10px 0; /* Espaciado vertical */
+  position: fixed; /* Añadido para hacerla fija */
+  top: 0; /* Asegura que esté en la parte superior */
+  width: 100%; /* Para que ocupe todo el ancho */
+  z-index: 1000; /* Asegura que esté sobre otros elementos */
+}
+
+/* Estilos para la lista */
+.nav-list {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  display: grid; /* Usa CSS Grid para organizar los botones */
+  grid-template-columns: repeat(3, auto); /* Tres columnas para los botones */
+  gap: 10px; /* Espaciado entre botones */
+  background: #155da1; /* Color de fondo para el área de botones */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 35px; /* Bordes redondeados */
+  box-shadow: 3px 3px 70px rgb(248, 247, 247);
 }
 
 /* Estilos para los botones */
 .nav-list button {
-    font-size: 1.5em;
-    background:transparent; /* Color de fondo de los botones */
-    color: white; /* Color del texto de los botones */
-    border: none; /* Elimina el borde predeterminado */
-    padding: 10px 20px; /* Espaciado interno de los botones */
-    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
-    border-radius: 35px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave al hacer hover */
+  font-size: 1.5em;
+  background:transparent; /* Color de fondo de los botones */
+  color: white; /* Color del texto de los botones */
+  border: none; /* Elimina el borde predeterminado */
+  padding: 10px 20px; /* Espaciado interno de los botones */
+  cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+  border-radius: 35px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave al hacer hover */
 }
 
 /* Efecto hover para los botones */
 .nav-list button:hover {
-    background:rgba(31, 18, 87, 0.5); /* Color de fondo al hacer hover */
-    color: white;
+  background:rgba(31, 18, 87, 0.5); /* Color de fondo al hacer hover */
+  color: white;
 }
 
 
 #img-banner{
-    position: absolute;
-    top: 0; /* Posicionada en la parte superior de la página */
-    right: 0; /* Alineada al lado derecho de la página */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
+  position: absolute;
+  top: 0; /* Posicionada en la parte superior de la página */
+  right: 0; /* Alineada al lado derecho de la página */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
 .img-logo{
-    position: absolute;
-    top: 200px; /* Posicionada en la parte superior de la página */
-    text-align: center;
-    left: 0; /* Alineada al lado derecho de la página */
-    padding-left: 150px;
-    height: auto; /* Mantiene la proporción de la imagen */
+  position: absolute;
+  top: 200px; /* Posicionada en la parte superior de la página */
+  text-align: center;
+  left: 0; /* Alineada al lado derecho de la página */
+  padding-left: 150px;
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 .p-img-logo{
-    position: absolute;
-    width: 50%;
-    top: 580px; /* Posicionada en la parte superior de la página */
-    text-align: left;
-    left: 0; /* Alineada al lado derecho de la página */
-    padding-left: 70px;
-    height: auto; /* Mantiene la proporción de la imagen */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
-    color: #706d6d;
-    }
+  position: absolute;
+  width: 50%;
+  top: 580px; /* Posicionada en la parte superior de la página */
+  text-align: left;
+  left: 0; /* Alineada al lado derecho de la página */
+  padding-left: 70px;
+  height: auto; /* Mantiene la proporción de la imagen */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  color: #706d6d;
+  }
 
 #botones-descarga{
-    padding-left: 180px;
+  padding-left: 180px;
 }
 .boton-logo{
-    position: relative;
-    top: 680px;
-    margin-left: 20px;
-    font-size: 1.3em;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    background-color:#155da1 ;
-    padding: 10px;
-    border-radius: 35px;
-    border-color: transparent;
+  position: relative;
+  top: 680px;
+  margin-left: 20px;
+  font-size: 1.3em;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color:#155da1 ;
+  padding: 10px;
+  border-radius: 35px;
+  border-color: transparent;
 }
 
 
 #p-span{
-    top:20%;
-    display: none;
-    font-size: 0.7em;
+  top:20%;
+  display: none;
+  font-size: 0.7em;
 }
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 1200px) {
-    .nav-list {
-        grid-template-columns: repeat(3, auto); /* Los botones se apilan verticalmente en pantallas pequeñas */
-        text-align: center; /* Centra los botones */
-    }
+  .nav-list {
+      grid-template-columns: repeat(3, auto); /* Los botones se apilan verticalmente en pantallas pequeñas */
+      text-align: center; /* Centra los botones */
+  }
 
-    .nav-list button {
-      font-size: 1.3em;
-      width: 100%; /* Los botones ocupan todo el ancho disponible */
+  .nav-list button {
+    font-size: 1.3em;
+    width: 100%; /* Los botones ocupan todo el ancho disponible */
+  }
+  #img-banner {
+    position: absolute;
+    top: 0; /* Posicionada en la parte superior de la página */
+    right: 0; /* Alineada al lado derecho de la página */
+    height: auto;
+    width: 62%;
     }
-    #img-banner {
+  .img-logo {
       position: absolute;
-      top: 0; /* Posicionada en la parte superior de la página */
-      right: 0; /* Alineada al lado derecho de la página */
-      height: auto;
-      width: 62%;
-      }
-    .img-logo {
-        position: absolute;
-        top: 130px; /* Posicionada en la parte superior de la página */
-        text-align: center;
-        left: 0; /* Alineada al lado derecho de la página */
-        padding-left: 50px;
-        width: 25vh;
-        height: auto; /* Mantiene la proporción de la imagen */
-    
-      }
-    .p-img-logo {
-        position: absolute;
-        top: 430px; /* Posicionada en la parte superior de la página */
-        text-align: left;
-        left: 0; /* Alineada al lado derecho de la página */
-        padding-left: 40px;
-        width: 30vh;
-        height: auto; /* Mantiene la proporción de la imagen */
-    
-      }
-     /* Estilo del título */
-    #ranchaapH1 {
-        display: none;
-      }
-
-    #botones-descarga{
-        padding-top: 240px;
-        padding-left: 60px;
+      top: 130px; /* Posicionada en la parte superior de la página */
+      text-align: center;
+      left: 0; /* Alineada al lado derecho de la página */
+      padding-left: 50px;
+      width: 25vh;
+      height: auto; /* Mantiene la proporción de la imagen */
+  
     }
-    .boton-logo{
-        position: relative;
-        top: 400px;
-        font-size: 0.9em;
+  .p-img-logo {
+      position: absolute;
+      top: 380px; /* Posicionada en la parte superior de la página */
+      text-align: left;
+      left: 0; /* Alineada al lado derecho de la página */
+      padding-left: 40px;
+      width: 30vh;
+      height: auto; /* Mantiene la proporción de la imagen */
+  
     }
-
-}
-
-@media (max-width: 780px) {
-    .nav-list {
-        margin-top: 0;
-      /*  grid-template-columns: repeat(3, auto); /* Los botones se apilan verticalmente en pantallas pequeñas */
-        text-align: center; /* Centra los botones */
-    }
-
-    .nav-list button {
-        font-size: 0.6em;
-        width: 100%; /* Los botones ocupan todo el ancho disponible */
-        height: 100%;
-    }
-    .nav-list button:hover {
-        background:rgba(31, 18, 87, 0.5); /* Color de fondo al hacer hover */
-        color: white;
-        
-    }
-    #img-banner{
-        position: absolute;
-        top: 0%; /* Posicionada en la parte superior de la página */
-        right: 0; /* Alineada al lado derecho de la página */
-       height: auto;
-       width: 62%;
-      }
-      .img-logo {
-        position: absolute;
-        top: 9%; /* Posicionada en la parte superior de la página */
-        padding-left: 50px;
-        width: 20%;
-        height: auto; /* Mantiene la proporción de la imagen */
-    
-      }
-      .p-img-logo {
-        font-size: 1em;
-        position: absolute;
-        top: 38%; /* Posicionada en la parte superior de la página */
-        text-align: center;
-        left: 0; /* Alineada al lado derecho de la página */
-        padding-left: 10px;
-        width: 245px;
-        height: auto; /* Mantiene la proporción de la imagen */
-    
-      }
-      /* Estilo del título */
-    #ranchaapH1 {
+   /* Estilo del título */
+  #ranchaapH1 {
       display: none;
     }
 
-    #botones-descarga{
-        padding-left: 60px;
-        padding-top: 90px;
-        
+  #botones-descarga{
+      padding-top: 240px;
+      padding-left: 60px;
+  }
+  .boton-logo{
+      position: relative;
+      top: 360px;
+      font-size: 0.9em;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .nav-list {
+      margin-top: 0;
+      text-align: center; /* Centra los botones */
+  }
+
+  .nav-list button {
+      font-size: 0.6em;
+      width: 100%; /* Los botones ocupan todo el ancho disponible */
+      height: 100%;
+  }
+  .nav-list button:hover {
+      background:rgba(31, 18, 87, 0.5); /* Color de fondo al hacer hover */
+      color: white;
+      
+  }
+  #img-banner{
+      position: absolute;
+      top: 0%; /* Posicionada en la parte superior de la página */
+      right: 0; /* Alineada al lado derecho de la página */
+     height: auto;
+     width: 62%;
     }
-    .boton-logo{
-        position: relative;
-        top: 270px;
-        font-size: 0.6em;
-        margin-left: 0;
+    .img-logo {
+      position: absolute;
+      top: 9%; /* Posicionada en la parte superior de la página */
+      padding-left: 50px;
+      width: 20%;
+      height: auto; /* Mantiene la proporción de la imagen */
+      left: 20px;
     }
+    .p-img-logo {
+      font-size: 1em;
+      position: absolute;
+      top: 280px; /* Posicionada en la parte superior de la página */
+      text-align: center;
+      left: 20px ; /* Alineada al lado derecho de la página */
+      padding-left: 10px;
+      width: 290px;
+      height: auto; /* Mantiene la proporción de la imagen */
+  
+    }
+    /* Estilo del título */
+  #ranchaapH1 {
+    display: none;
+  }
+
+  #botones-descarga{
+      padding-left: 60px;
+      padding-top: 90px;
+      left: 20px;
+  }
+  .boton-logo{
+      position: relative;
+      top: 320px;
+      font-size: 0.6em;
+  }
 
 }
 @media (max-width: 550px) {
-    .p-img-logo {
-        position: absolute;
-        top: 19%; /* Posicionada en la parte superior de la página */
-        text-align: center;
-        left: 0; /* Alineada al lado derecho de la página */
-        padding-left: 10px;
-        width: 210px;
-        height: auto; /* Mantiene la proporción de la imagen */
-    
-      }
-      #botones-descarga{
-        padding-left: 30px;
-        
+  .img-logo {
+    left: 0px;
+  }
+  .p-img-logo {
+      position: absolute;
+      top: 19%; /* Posicionada en la parte superior de la página */
+      text-align: center;
+      left: 0; /* Alineada al lado derecho de la página */
+      padding-left: 10px;
+      width: 210px;
+      height: auto; /* Mantiene la proporción de la imagen */
+  
     }
-    .boton-logo{
-        position: relative;
-        top: 295px;
-        font-size: 0.6em;
-        margin-left: 0;
-    }
+    #botones-descarga{
+      padding-left: 30px;
+      
+  }
+  .boton-logo{
+      position: relative;
+      top: 295px;
+      font-size: 0.6em;
+      margin-left: 0;
+  }
 }
 
 @media (max-width:450px) {
-    .img-logo {
-        position: absolute;
-        top: 7%; /* Posicionada en la parte superior de la página */
-        padding-left: 40px;
-        width: 20%;
-        height: auto; /* Mantiene la proporción de la imagen */
-    
-      }
-    #pie-img{
-        display: none;
+  .img-logo {
+      position: absolute;
+      top: 7%; /* Posicionada en la parte superior de la página */
+      padding-left: 40px;
+      width: 20%;
+      height: auto; /* Mantiene la proporción de la imagen */
+  
     }
-    #p-span{
-    display: grid;
-    font-family: 'Montserrat', sans-serif;
-    width: 50%;
+  #pie-img{
+      display: none;
+  }
+  #p-span{
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  width: 50%;
+  }
+  .p-img-logo {
+      position: absolute;
+      top: 160px; /* Posicionada en la parte superior de la página */
+      text-align: left;
+      left: 0;
+      padding-left: 30px;
+      width: 60%;
+      height: auto; /* Mantiene la proporción de la imagen */
+  
     }
-    .p-img-logo {
-        position: absolute;
-        top: 160px; /* Posicionada en la parte superior de la página */
-        text-align: left;
-        left: 0;
-        padding-left: 30px;
-        width: 60%;
-        height: auto; /* Mantiene la proporción de la imagen */
-    
-      }
-    #botones-descarga{
-        padding-left: 25px;
-    }
-    .boton-logo{
-        position: relative;
-        top: 135px;
-        font-size: 0.3em;
-    }
+  #botones-descarga{
+      padding-left: 25px;
+  }
+  .boton-logo{
+      position: relative;
+      top: 135px;
+      font-size: 0.3em;
+  }
 }
 
 @media (max-width:350px) {
-    .p-img-logo {
-        position: absolute;
-        top: 105px; /* Posicionada en la parte superior de la página */
-        text-align: center;
-        padding-left: 25px;
-        width: 65%;
-        height: auto; /* Mantiene la proporción de la imagen */
-    
-      }
-    #botones-descarga{
-        padding-left: 20px;
+  .p-img-logo {
+      position: absolute;
+      top: 125px; /* Posicionada en la parte superior de la página */
+      text-align: center;
+      padding-left: 25px;
+      width: 65%;
+      height: auto; /* Mantiene la proporción de la imagen */
+  
     }
-    .boton-logo{
-        position: relative;
-        top: 80px;
-        font-size: 0.3em;
-    }
+  #botones-descarga{
+      padding-left: 20px;
+  }
+  .boton-logo{
+      position: relative;
+      top: 100px;
+      font-size: 0.3em;
+  }
 }
 
 
 
 .cuadrados {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 860px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 860px;
+}
+
+.cuadro {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 15px;
+  width: calc(25.33% - 40px);
+  opacity: 0; /* inicialmente oculto */
+  transform: translateY(10px); /* inicialmente fuera de la pantalla */
+  transition: opacity 0.5s, transform 0.5s; /* add transition effect */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #706d6d;
+}
+
+.scroll-reveal {
+  opacity: 1; /* mostrar cuando se scrollea */
+  transform: translateY(00.5s); /* mostrar en su posición original */
+}
+
+
+.cuadro:hover {
+  transform: scale(1.1); /* add hover effect */
+}
+
+.icono {
+  width: 80px; /* ajusta el tamaño de la imagen */
+  height: 80px; /* ajusta el tamaño de la imagen */
+  margin-bottom: 10px;
+  text-align: center;
+  object-fit: cover; /* ajusta la imagen para que se adapte al tamaño */
+}
+
+/* Media query for responsive design */
+@media (max-width: 1200px) {
+  .cuadrados {
+    margin-top: 650px;
   }
-  
   .cuadro {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 15px;
-    width: calc(25.33% - 40px);
-    opacity: 0; /* inicialmente oculto */
-    transform: translateY(10px); /* inicialmente fuera de la pantalla */
-    transition: opacity 0.5s, transform 0.5s; /* add transition effect */
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #706d6d;
+    width: calc(25% - 40px);
   }
-  
-  .scroll-reveal {
-    opacity: 1; /* mostrar cuando se scrollea */
-    transform: translateY(00.5s); /* mostrar en su posición original */
-  }
-  
-  
-  .cuadro:hover {
-    transform: scale(1.1); /* add hover effect */
-  }
-  
-  .icono {
-    width: 80px; /* ajusta el tamaño de la imagen */
-    height: 80px; /* ajusta el tamaño de la imagen */
-    margin-bottom: 10px;
-    text-align: center;
-    object-fit: cover; /* ajusta la imagen para que se adapte al tamaño */
-  }
-  
-  /* Media query for responsive design */
-  @media (max-width: 1200px) {
-    .cuadrados {
-      margin-top: 650px;
-    }
-    .cuadro {
-      width: calc(25% - 40px);
-    }
-  }
+}
 
-  @media (max-width: 700px) {
-    .cuadrados {
-        margin-top: 500px;
-    }
-    .cuadro {
-      width: 60%;
-    }
+@media (max-width: 700px) {
+  .cuadrados {
+      margin-top: 500px;
   }
-  
-  @media (max-width: 480px) {
-    .cuadrados {
-        margin-top: 350px;
-    }
-    .cuadro {
-      width: 60%;
-    }
+  .cuadro {
+    width: 60%;
   }
-  @media (max-width: 440px) {
-    .cuadrados {
-        margin-top: 210px;
-    }
-    .cuadro {
-      width: 60%;
-    }
+}
+
+@media (max-width: 480px) {
+  .cuadrados {
+      margin-top: 350px;
   }
+  .cuadro {
+    width: 60%;
+  }
+}
+@media (max-width: 440px) {
+  .cuadrados {
+      margin-top: 210px;
+  }
+  .cuadro {
+    width: 60%;
+  }
+}
 
 
-  .imagnes-lado-izquierdo{
-    width: 100%; /* establecer un ancho del 100% */
-    float: left; /* agregar float: left para que se alinee a la izquierda */
-  }
-  
+.imagnes-lado-izquierdo{
+  width: 100%; /* establecer un ancho del 100% */
+  float: left; /* agregar float: left para que se alinee a la izquierda */
+}
+
+#contenedor-imgs{
+  width: 100%; /* establecer un ancho del 100% */
+  float: left; /* agregar float: left para que se alinee a la izquierda */
+  position: relative; /* agregar position: relative para que la imagen 2 se posicione absolutamente */
+}
+
+#imagen-celular-izquierda{
+  position: absolute; /* agregar position: absolute para que la imagen 2 se posicione absolutamente */
+  top: 400px; /* agregar top: 0 para que la imagen 2 se posicione en la parte superior */
+  left: 50px; /* agregar left: 0 para que la imagen 2 se alinee a la izquierda */
+  width: 100%; /* establecer un ancho del 100% */
+}
+
+/* Agregar regla para recortar el tamaño del contenedor variando la proporción de la pantalla */
+
+@media (max-width: 1920px) {
   #contenedor-imgs{
-    width: 100%; /* establecer un ancho del 100% */
+    width: 40%; /* recortar el ancho a un 40% */
+    height: auto; /* mantener la altura automática */
     float: left; /* agregar float: left para que se alinee a la izquierda */
-    position: relative; /* agregar position: relative para que la imagen 2 se posicione absolutamente */
   }
-  
   #imagen-celular-izquierda{
-    position: absolute; /* agregar position: absolute para que la imagen 2 se posicione absolutamente */
-    top: 400px; /* agregar top: 0 para que la imagen 2 se posicione en la parte superior */
-    left: 50px; /* agregar left: 0 para que la imagen 2 se alinee a la izquierda */
-    width: 100%; /* establecer un ancho del 100% */
+    width: 80%; /* recortar el ancho a un 40% */
   }
-  
-  /* Agregar regla para recortar el tamaño del contenedor variando la proporción de la pantalla */
-  
-  @media (max-width: 1920px) {
-    #contenedor-imgs{
-      width: 40%; /* recortar el ancho a un 40% */
-      height: auto; /* mantener la altura automática */
-      float: left; /* agregar float: left para que se alinee a la izquierda */
-    }
-    #imagen-celular-izquierda{
-      width: 80%; /* recortar el ancho a un 40% */
-    }
+}
+
+@media (max-width: 1366px) {
+  #contenedor-imgs{
+    width: 50%; /* recortar el ancho a un 30% */
+    height: auto; /* mantener la altura automática */
+    float: left; /* agregar float: left para que se alinee a la izquierda */
   }
-  
-  @media (max-width: 1366px) {
-    #contenedor-imgs{
-      width: 50%; /* recortar el ancho a un 30% */
-      height: auto; /* mantener la altura automática */
-      float: left; /* agregar float: left para que se alinee a la izquierda */
-    }
-    #imagen-celular-izquierda{
-      width: 80%; /* recortar el ancho a un 30% */
-      top: 300px;
-    }
+  #imagen-celular-izquierda{
+    width: 80%; /* recortar el ancho a un 30% */
+    top: 300px;
   }
-  
-  @media (max-width: 1100px) {
-    #contenedor-imgs{
-      width: 40%; /* recortar el ancho a un 20% */
-      height: auto; /* mantener la altura automática */
-      float: left; /* agregar float: left para que se alinee a la izquierda */
-    }
-    #imagen-celular-izquierda{
-      width: 80%; /* recortar el ancho a un 20% */
-      top: 200px;
-      left: 0px;
-    }
+}
+
+@media (max-width: 1100px) {
+  #contenedor-imgs{
+    width: 40%; /* recortar el ancho a un 20% */
+    height: auto; /* mantener la altura automática */
+    float: left; /* agregar float: left para que se alinee a la izquierda */
   }
-  
-  @media (max-width: 768px) {
-    #contenedor-imgs{
-      width: 40%; /* recortar el ancho a un 10% */
-      height: auto; /* mantener la altura automática */
-      float: left; /* agregar float: left para que se alinee a la izquierda */
-    }
-    #imagen-celular-izquierda{
-      width: 78%; /* recortar el ancho a un 10% */
-      top: 150px;
-      left: 0px;
-    }
+  #imagen-celular-izquierda{
+    width: 80%; /* recortar el ancho a un 20% */
+    top: 200px;
+    left: 0px;
   }
-  
-  @media (max-width: 480px) {
-    #contenedor-imgs{
-      display: none;
-      width: 40%; /* recortar el ancho a un 5% */
-      height: auto; /* mantener la altura automática */
-      float: left; /* agregar float: left para que se alinee a la izquierda */
-    }
-    #imagen-celular-izquierda{
-      display: none;
-      width: 75%; /* recortar el ancho a un 5% */
-      top: 100px;
-      left: 0px;
-    }
+}
+
+@media (max-width: 768px) {
+  #contenedor-imgs{
+    width: 40%; /* recortar el ancho a un 10% */
+    height: auto; /* mantener la altura automática */
+    float: left; /* agregar float: left para que se alinee a la izquierda */
   }
-  
-  @media (max-width: 320px) {
-    #contenedor-imgs{
-      width: 35%; /* recortar el ancho a un 2% */
-      height: auto; /* mantener la altura automática */
-      float: left; /* agregar float: left para que se alinee a la izquierda */
-    }
-    #imagen-celular-izquierda{
-      width: 80%; /* recortar el ancho a un 2% */
-      top: 50px;
-      left: 0px;
-    }
+  #imagen-celular-izquierda{
+    width: 78%; /* recortar el ancho a un 10% */
+    top: 150px;
+    left: 0px;
   }
+}
+
+@media (max-width: 480px) {
+  #contenedor-imgs{
+    display: none;
+    width: 40%; /* recortar el ancho a un 5% */
+    height: auto; /* mantener la altura automática */
+    float: left; /* agregar float: left para que se alinee a la izquierda */
+  }
+  #imagen-celular-izquierda{
+    display: none;
+    width: 75%; /* recortar el ancho a un 5% */
+    top: 100px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  #contenedor-imgs{
+    width: 35%; /* recortar el ancho a un 2% */
+    height: auto; /* mantener la altura automática */
+    float: left; /* agregar float: left para que se alinee a la izquierda */
+  }
+  #imagen-celular-izquierda{
+    width: 80%; /* recortar el ancho a un 2% */
+    top: 50px;
+    left: 0px;
+  }
+}
 
 
-  #contenedor-iconos {
-    padding-left: 80px;
-    display: flex;
-    flex-direction: column; /* Organiza los iconos en una columna */
-    padding-top: 400px;
-    width: 50%;
-  }
-  
-  .icono2 {
-    display: flex; /* Usar Flexbox para alinear icono y texto */
-    align-items: center; /* Alinear verticalmente al centro */
-    margin-bottom: 50px; /* Espacio entre los iconos */
-  }
-  
-  .img-iconos-derechaDelCelu {
-    margin-right: 15px; /* Espacio entre el icono y el texto */
-    max-width: 150px; /* Limitar el tamaño del icono */
-  }
-  
-  .icono2 div {
-    display: flex;
-    flex-direction: column; /* Coloca el título encima del texto */
-  }
-  
-  h4, p {
-    font-size: 1.5em;
-    margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
-  }
-  #texto-iconos2{
-    color:#636262 ;
-  }
-  
+#contenedor-iconos {
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column; /* Organiza los iconos en una columna */
+  padding-top: 530px;
+  width: 50%;
+}
+
+.icono2 {
+  display: flex; /* Usar Flexbox para alinear icono y texto */
+  align-items: center; /* Alinear verticalmente al centro */
+  margin-bottom: 50px; /* Espacio entre los iconos */
+}
+
+.img-iconos-derechaDelCelu {
+  margin-right: 15px; /* Espacio entre el icono y el texto */
+  max-width: 150px; /* Limitar el tamaño del icono */
+}
+
+.icono2 div {
+  display: flex;
+  flex-direction: column; /* Coloca el título encima del texto */
+}
+
+h4, p {
+  font-size: 1.5em;
+  margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
+}
+#texto-iconos2{
+  color:#636262 ;
+}
+
 /* Responsividad */
 @media (max-width: 1100px) {
+#contenedor-iconos {
+  padding-top: 140px; /* Reducir el padding en pantallas más pequeñas */
+  max-width: 70vh;
+}
+
+.icono2 {
+  flex-direction: row; /* Mantener el icono a la izquierda */
+}
+
+.img-iconos-derechaDelCelu {
+  max-width: 80px; /* Ajustar el tamaño del icono */
+}
+h4, p {
+  font-size: 1.2em;
+  margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
+}
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
   #contenedor-iconos {
-    padding-top: 140px; /* Reducir el padding en pantallas más pequeñas */
-    max-width: 70vh;
+    padding-top: 100px; /* Reducir el padding en pantallas más pequeñas */
+    
+  padding-left: 0px;
   }
   
   .icono2 {
@@ -524,300 +547,270 @@ body {
   }
 
   .img-iconos-derechaDelCelu {
-    max-width: 80px; /* Ajustar el tamaño del icono */
+    max-width: 60px; /* Ajustar el tamaño del icono */
   }
   h4, p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
   }
 }
 
-
-  /* Responsividad */
-  @media (max-width: 768px) {
-    #contenedor-iconos {
-      padding-top: 100px; /* Reducir el padding en pantallas más pequeñas */
-      
-    padding-left: 0px;
-    }
-    
-    .icono2 {
-      flex-direction: row; /* Mantener el icono a la izquierda */
-    }
-  
-    .img-iconos-derechaDelCelu {
-      max-width: 60px; /* Ajustar el tamaño del icono */
-    }
-    h4, p {
-      font-size: 1em;
-      margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
-    }
+@media (max-width: 480px) {
+  #contenedor-iconos {
+    display: contents;
+  text-align: center;
+}
+  #icono-1{
+    padding-top: 45px;
   }
-  
-  @media (max-width: 480px) {
-    #contenedor-iconos {
-      display: contents;
+  .icono2 {
+    flex-direction: column; /* Cambiar a columna en pantallas muy pequeñas */
+    align-items: center; /* Alinear a la izquierda */
     text-align: center;
   }
-    #icono-1{
-      padding-top: 45px;
-    }
-    .icono2 {
-      flex-direction: column; /* Cambiar a columna en pantallas muy pequeñas */
-      align-items: center; /* Alinear a la izquierda */
-      text-align: center;
-    }
+
+  .img-iconos-derechaDelCelu {
+    margin-bottom: 10px; /* Espacio entre el icono y el texto */
+    max-width: 80px;
+  }
+  h4, p {
+    font-size: 1em;
+    margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
+    align-items: center;
+    max-width: 75%;
+  }
+  .textos-de-iconos1{
+    max-width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 450px) {
+ 
   
-    .img-iconos-derechaDelCelu {
-      margin-bottom: 10px; /* Espacio entre el icono y el texto */
-      max-width: 80px;
-    }
-    h4, p {
-      font-size: 1em;
-      margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
-      align-items: center;
-      max-width: 75%;
-    }
-    .textos-de-iconos1{
-      max-width: 80%;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  @media (max-width: 450px) {
-   
-    
-  }
-  /* Animaciones para imágenes e iconos (sin inicializar) */
+}
+/* Animaciones para imágenes e iconos (sin inicializar) */
 .imagnes-lado-izquierdo,
 .icono2 {
-  opacity: 0;
-  transform: translateX(-50px); /* Para las imágenes de la izquierda */
-  transition: transform 1s ease, opacity 1s ease;
+opacity: 0;
+transform: translateX(-50px); /* Para las imágenes de la izquierda */
+transition: transform 1s ease, opacity 1s ease;
 }
 
 /* Cuando se vuelve visible, aplicamos animación desde la izquierda */
 .animated-left {
-  opacity: 1;
-  transform: translateX(0);
+opacity: 1;
+transform: translateX(0);
 }
 
 /* Cuando se vuelve visible, aplicamos animación desde la derecha */
 .animated-right {
-  opacity: 1;
-  transform: translateX(0);
+opacity: 1;
+transform: translateX(0);
 }
 
 
 /*Equipo*/
 
 .nuestro-equipo {
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+padding-top: 100px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
 }
 
 .txt-nuestro-equipo {
-  text-align: center;
-  width: 70%;
-  margin-bottom: 20px;
+text-align: center;
+width: 70%;
+margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .txt-nuestro-equipo {
-    width: 80%;
-  }
+.txt-nuestro-equipo {
+  width: 80%;
+}
 }
 
 
 .cuadradosEquipo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 20px;
 }
 
 .cuadroEquipo {
-  background-color: #155da1;
-  border-radius: 40px 40px 40px 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin: 15px;
-  width: calc(20% - 35px);
-  opacity: 1; /* inicialmente oculto */
-  transform: translateY(10px); /* inicialmente fuera de la pantalla */
-  transition: opacity 0.5s, transform 0.5s; /* add transition effect */
-  text-align: center;
-  font-size: 0.6em;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
+background-color: #155da1;
+border-radius: 40px 40px 40px 40px;
+box-shadow:  #242b31 0px 0px 5px 0px;
+
+padding: 20px;
+margin: 15px;
+width: calc(20% - 35px);
+opacity: 1; /* inicialmente oculto */
+transform: translateY(10px); /* inicialmente fuera de la pantalla */
+transition: opacity 0.5s, transform 0.5s; /* add transition effect */
+text-align: center;
+font-size: 0.6em;
+font-family: 'Montserrat', sans-serif;
+color: white;
 }
 
 .scroll-revealEquipo {
-  opacity: 1; /* mostrar cuando se scrollea */
-  transform: translateY(00.5s); /* mostrar en su posición original */
+opacity: 1; /* mostrar cuando se scrollea */
+transform: translateY(00.5s); /* mostrar en su posición original */
 }
 
 
-.cuadroEquipo:hover {
-  transform: scale(1.1); /* add hover effect */
-}
 
 .iconoEquipo {
-  border-radius:10px 10px 10px 10px;
-  width: 40%; /* ajusta el tamaño de la imagen */
-  height: 40%; /* ajusta el tamaño de la imagen */
-  margin-bottom: 10px;
-  text-align: center;
-  object-fit: cover; /* ajusta la imagen para que se adapte al tamaño */
+border-radius:10px 10px 10px 10px;
+width: 40%; /* ajusta el tamaño de la imagen */
+height: 40%; /* ajusta el tamaño de la imagen */
+margin-bottom: 10px;
+text-align: center;
+object-fit: cover; /* ajusta la imagen para que se adapte al tamaño */
 }
 
+.h2-cuadro-equipo{
+color: white; 
+font-size: 2em;
+}
+.p-cuadro-equipo{
+max-width: 100%;
+font-size: 1em;
+}
+
+/* Media query for responsive design */
+@media (max-width: 1200px) {
+.cuadradosEquipo {
+  margin-top: 20px;
+}
+.cuadroEquipo {
+  width: calc(25% - 40px);
+}
 .h2-cuadro-equipo{
   color: white; 
   font-size: 2em;
 }
 .p-cuadro-equipo{
-  max-width: 100%;
   font-size: 1em;
+  padding-bottom: 30px;
 }
-
-/* Media query for responsive design */
-@media (max-width: 1200px) {
-  .cuadradosEquipo {
-    margin-top: 20px;
-  }
-  .cuadroEquipo {
-    width: calc(25% - 40px);
-  }
-  .h2-cuadro-equipo{
-    color: white; 
-    font-size: 2em;
-  }
-  .p-cuadro-equipo{
-    font-size: 1em;
-    padding-bottom: 30px;
-  }
 }
 
 @media (max-width: 730px) {
-  .cuadradosEquipo {
-      margin-top: 20px;
-  }
-  .cuadroEquipo {
-    width: 60%;
-  }
-  .h2-cuadro-equipo{
-  color: white; 
+.cuadradosEquipo {
+    margin-top: 20px;
+}
+.cuadroEquipo {
+  width: 60%;
+}
+.h2-cuadro-equipo{
+color: white; 
+font-size: 2em;
+}
+.p-cuadro-equipo{
   font-size: 2em;
-  }
-  .p-cuadro-equipo{
-    font-size: 2em;
-    padding-bottom: 10px;
-  }
+  padding-bottom: 10px;
+}
 
 }
 
 @media (max-width: 480px) {
-  .cuadradosEquipo {
-      margin-top: 20px;
-  }
-  .cuadroEquipo {
-    width: 60%;
-  }
-  .h2-cuadro-equipo{
-  color: white; 
-  font-size: 2em;
-  }
-  .p-cuadro-equipo{
-    font-size:1em;
-    padding-bottom: 0px;
-  }
+.cuadradosEquipo {
+    margin-top: 20px;
+}
+.cuadroEquipo {
+  width: 60%;
+}
+.h2-cuadro-equipo{
+color: white; 
+font-size: 2em;
+}
+.p-cuadro-equipo{
+  font-size:1em;
+  padding-bottom: 0px;
+}
 
 }
 /* Estilos de contacto */
 #contacto-h1 {
-  padding-top: 90px;
-  text-align: center;
-  font-size: 2em;
-  color: black;
-  z-index: 2; /* Asegúrate de que el contenedor esté por encima */
+padding-top: 90px;
+text-align: center;
+font-size: 2em;
+color: black;
+z-index: 2; /* Asegúrate de que el contenedor esté por encima */
 position: relative;
 }
 
 .contact-container {
-  position: relative; /* Necesario para el posicionamiento del formulario */
-  max-width: 600px;
-  margin: 40px auto; /* Centrar el contenedor */
-  padding: 20px;
-  background-color: #155da1; /* Fondo oscuro con opacidad */
-  border-radius: 20px;
-  box-shadow: #155da1 0px 0px 55px 0px;
-  z-index: 2; /* Asegúrate de que el contenedor esté por encima */
+position: relative; /* Necesario para el posicionamiento del formulario */
+max-width: 600px;
+margin: 40px auto; /* Centrar el contenedor */
+padding: 20px;
+background-color: #155da1; /* Fondo oscuro con opacidad */
+border-radius: 20px;
+box-shadow: #155da1 0px 0px 55px 0px;
+z-index: 2; /* Asegúrate de que el contenedor esté por encima */
 }
 
 .contact-form {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
 .contact-form textarea {
-  width: 100%; /* Ajustar para que ocupe todo el ancho */
-  padding:10px 0px 10px 0px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+width: 100%; /* Ajustar para que ocupe todo el ancho */
+padding:10px 0px 10px 0px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
 }
 
 .contact-form button[type="submit"] {
-  background-color: #fff;
-  color:  #155da1;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+background-color: #fff;
+color:  #155da1;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
 
 .contact-form button[type="submit"]:hover {
-  background-color: #0d4b78; /* Color al pasar el ratón */
+background-color: #0d4b78; /* Color al pasar el ratón */
 }
 
 #bg-image {
-  position: relative;
-  width: 100%;
-  height: auto; /* Mantener la proporción de la imagen */
-  margin-top: -600px; /* Ajustar si es necesario para superponer */
-  bottom: 0;
+position: relative;
+width: 100%;
+height: auto; /* Mantener la proporción de la imagen */
+margin-top: -600px; /* Ajustar si es necesario para superponer */
+bottom: 0;
 }
 
 #honeypot {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
+display: none;
+visibility: hidden;
+opacity: 0;
+position: absolute;
 }
 
 @media (max-width: 800px) {
-  
-  .contact-container {
-    max-width: 400px;
-  }
-  
 
-
+.contact-container {
+  max-width: 400px;
+}
 }
 
 @media (max-width: 480px) {
-  
-  .contact-container {
-    max-width: 260px;
-   
-  }
-  
-
+.contact-container {
+  max-width: 260px;
+ 
+}
 }
