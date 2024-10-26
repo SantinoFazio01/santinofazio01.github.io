@@ -742,7 +742,8 @@ font-size: 2em;
 padding-top: 90px;
 text-align: center;
 font-size: 2em;
-color: black;
+color: white;
+text-shadow: 0.2em 0.1em 0.1em  #000000;
 z-index: 2; /* Asegúrate de que el contenedor esté por encima */
 position: relative;
 }
@@ -752,9 +753,9 @@ position: relative; /* Necesario para el posicionamiento del formulario */
 max-width: 600px;
 margin: 40px auto; /* Centrar el contenedor */
 padding: 20px;
-background-color: #155da1; /* Fondo oscuro con opacidad */
+background-color: #ffffff; /* Fondo oscuro con opacidad */
 border-radius: 20px;
-box-shadow: #155da1 0px 0px 55px 0px;
+box-shadow: #000000 0px 0px 25px 0px;
 z-index: 2; /* Asegúrate de que el contenedor esté por encima */
 }
 
@@ -769,13 +770,13 @@ margin-bottom: 20px;
 width: 100%; /* Ajustar para que ocupe todo el ancho */
 padding:10px 0px 10px 0px;
 margin-bottom: 20px;
-border: 1px solid #ccc;
+border: 1px solid #155da1;
 border-radius: 5px;
 }
 
 .contact-form button[type="submit"] {
-background-color: #fff;
-color:  #155da1;
+background-color: #155da1;
+color:  #fff;
 padding: 10px 20px;
 border: none;
 border-radius: 5px;
