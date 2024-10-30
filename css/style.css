@@ -768,10 +768,11 @@ margin-bottom: 20px;
 .contact-form input[type="tel"],
 .contact-form textarea {
 width: 100%; /* Ajustar para que ocupe todo el ancho */
-padding:10px 0px 10px 0px;
+padding:10px 0px 10px 10px;
 margin-bottom: 20px;
 border: 1px solid #155da1;
 border-radius: 5px;
+font-family: 'Montserrat', sans-serif;
 }
 
 .contact-form button[type="submit"] {
