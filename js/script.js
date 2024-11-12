@@ -64,3 +64,25 @@ function openEmailClient(event) {
   // Abrir el cliente de correo del usuario
   window.location.href = mailtoLink;
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const termsPopup = document.getElementById("terms-popup");
+  const acceptButton = document.getElementById("accept-btn");
+  const rejectButton = document.getElementById("reject-btn");
+  const mainContent = document.getElementById("main-content");
+
+  // Muestra el popup al cargar la página
+  termsPopup.style.display = "flex";
+
+  // Funcionalidad del botón de aceptar
+  acceptButton.addEventListener("click", () => {
+      termsPopup.style.display = "none"; // Oculta el popup
+      mainContent.style.display = "block"; // Muestra el contenido principal
+  });
+
+  // Funcionalidad del botón de rechazo
+  rejectButton.addEventListener("click", () => {
+      alert("Debes aceptar los Términos y Condiciones para acceder a RanchApp.");
+  });
+});
