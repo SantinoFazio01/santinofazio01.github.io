@@ -9,6 +9,56 @@
 </head>
 <body>
 
+<!-- Contenedor del Popup de Términos y Condiciones -->
+<div class="overlay" id="terms-popup">
+  <div class="popup-content">
+      <h2>Términos y Condiciones de Uso de RanchApp</h2>
+      <div class="terms-text">
+        <p><strong>1. Introducción</strong><br>
+          Bienvenido a RanchApp, una aplicación desarrollada para facilitar la organización de eventos sociales entre amigos y familiares. A través de RanchApp, los usuarios pueden gestionar eventos, coordinar asistencia, dividir gastos, y ubicar eventos mediante geolocalización. Al utilizar RanchApp, aceptas los presentes Términos y Condiciones, los cuales constituyen un acuerdo legal entre el usuario y RanchApp. Si no estás de acuerdo, te solicitamos que no utilices la aplicación.</p>
+          
+          <p><strong>2. Uso de RanchApp y Responsabilidad del Usuario</strong><br>
+          RanchApp proporciona diversas funcionalidades para la organización de eventos, incluyendo:</p>
+          <ul>
+              <li>Creación de eventos sociales y su gestión (nombre, fecha, ubicación, descripción).</li>
+              <li>Confirmación de asistencia por parte de los participantes.</li>
+              <li>División de gastos entre los asistentes mediante integración con Mercado Pago.</li>
+              <li>Visualización de ubicaciones de eventos a través de Google Maps API.</li>
+          </ul>
+          <p>El usuario se compromete a:</p>
+          <ul>
+              <li>Utilizar la aplicación únicamente para fines personales y lícitos.</li>
+              <li>Proporcionar información verídica y actualizada.</li>
+              <li>Ser responsable de la seguridad de su cuenta, manteniendo sus credenciales de acceso de manera segura.</li>
+              <li>No utilizar RanchApp para actividades fraudulentas, ilegales o para infringir derechos de terceros.</li>
+          </ul>
+
+          <p><strong>3. Registro y Cuenta de Usuario</strong><br>
+          Para utilizar RanchApp, los usuarios deben iniciar sesión a través de Google OAuth, lo que permite un acceso seguro mediante la cuenta de Google del usuario. RanchApp no almacena directamente los datos personales del usuario; la autenticación y gestión de datos están a cargo de Google. Es responsabilidad del usuario proteger la seguridad de su cuenta de Google y notificar a Google en caso de actividad no autorizada.</p>
+          
+          <p><strong>4. Privacidad y Protección de Datos</strong><br>
+          RanchApp respeta la privacidad de sus usuarios y utiliza Google OAuth para la autenticación, por lo que la información de inicio de sesión y los datos personales del usuario son gestionados por Google, no por RanchApp. Asimismo, RanchApp utiliza el Google Calendar API y Google Maps API para funcionalidades específicas de la aplicación. La información recopilada mediante estas APIs se usa exclusivamente para el funcionamiento de RanchApp y no se comparte con terceros sin el consentimiento del usuario. Para más detalles sobre el manejo de datos personales, consulta la <a href="#">Política de Privacidad de Google</a>.</p>
+
+          <p><strong>5. Pagos y Transacciones</strong><br>
+          RanchApp permite la división de gastos entre los participantes de eventos mediante la integración con el sistema de pagos de Mercado Pago. El usuario comprende que RanchApp actúa como intermediario en la organización y cálculo de los gastos, pero no es responsable de problemas derivados de los sistemas de pago externos. Cualquier problema o disputa relacionada con los pagos deberá ser gestionada directamente con Mercado Pago u otros proveedores de pagos utilizados por el usuario.</p>
+          
+          <p><strong>6. Limitaciones y Exención de Responsabilidad</strong><br>
+          RanchApp se proporciona "tal cual" y, en la medida permitida por la ley, no asume responsabilidad alguna por errores o fallos técnicos, interrupciones del servicio, o problemas derivados de la integración con APIs de terceros. RanchApp tampoco es responsable de la exactitud o disponibilidad de los servicios de geolocalización o las funciones de pago.</p>
+          
+          <p><strong>7. Modificación de los Términos y Condiciones</strong><br>
+          RanchApp se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán publicadas en la aplicación, y se considerará que los usuarios aceptan los cambios si continúan utilizando RanchApp después de la publicación.</p>
+          
+          <p><strong>8. Contacto</strong><br>
+          Si tienes preguntas o necesitas asistencia, puedes ponerte en contacto con nosotros a través de ranchapp.oficial@gmail.com.</p>
+     </div>
+      <!-- Botones de Aceptar y Rechazar -->
+      <button id="accept-btn">Aceptar</button>
+      <button id="reject-btn">Rechazar</button>
+  </div>
+</div>
+
+
+
     <section id="INICIO">
         <header>
             <div class="navbar">
