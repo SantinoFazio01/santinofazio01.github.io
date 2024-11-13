@@ -170,6 +170,7 @@ body {
   }
 
   .nav-list button {
+    margin: 0;
       font-size: 0.6em;
       width: 100%; /* Los botones ocupan todo el ancho disponible */
       height: 100%;
@@ -897,3 +898,5 @@ button {
 #main-content {
   display: none;
 }
+
+
