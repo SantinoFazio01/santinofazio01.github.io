@@ -854,10 +854,11 @@ position: absolute;
 
 /* Contenido del popup */
 .popup-content {
+  margin-top: 150px;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 90%;
+  padding: 30px;
+  border-radius: 12px;
+  width: 70%;
   max-width: 600px;
   text-align: center;
 }
