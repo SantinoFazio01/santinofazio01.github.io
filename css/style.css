@@ -1,6 +1,6 @@
 body {
-  background: #fff;
-  color: black;
+  background: rgb(22, 22, 22);
+  color: #fff;
   margin: 0;
   padding-top: 0;
   font-family: 'Montserrat', sans-serif;
@@ -36,7 +36,7 @@ body {
   background: #155da1; /* Color de fondo para el área de botones */
   padding: 10px; /* Espaciado interno */
   border-radius: 35px; /* Bordes redondeados */
-  box-shadow: 3px 3px 10px rgb(248, 247, 247);
+  box-shadow: 1px 1px 6px rgb(248, 247, 247);
 }
 
 /* Estilos para los botones */
@@ -82,7 +82,7 @@ body {
   height: auto; /* Mantiene la proporción de la imagen */
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
-  color: #706d6d;
+  color: #dfdfdf;
   }
 
 #botones-descarga{
@@ -316,8 +316,8 @@ body {
 }
 
 .cuadro {
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.247);
   padding: 20px;
   margin: 15px;
   width: calc(25.33% - 40px);
@@ -326,7 +326,8 @@ body {
   transition: opacity 0.5s, transform 0.5s; /* add transition effect */
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  color: #706d6d;
+  color: #dfdfdf;
+  border-radius: 35px 35px 35px;
 }
 
 .scroll-reveal {
@@ -415,9 +416,9 @@ body {
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1400px) {
   #contenedor-imgs{
-    width: 50%; /* recortar el ancho a un 30% */
+    width: 40%; /* recortar el ancho a un 30% */
     height: auto; /* mantener la altura automática */
     float: left; /* agregar float: left para que se alinee a la izquierda */
   }
@@ -453,7 +454,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   #contenedor-imgs{
     display: none;
     width: 40%; /* recortar el ancho a un 5% */
@@ -486,7 +487,7 @@ body {
   padding-left: 80px;
   display: flex;
   flex-direction: column; /* Organiza los iconos en una columna */
-  padding-top: 530px;
+  padding-top: 420px;
   width: 50%;
 }
 
@@ -498,7 +499,7 @@ body {
 
 .img-iconos-derechaDelCelu {
   margin-right: 15px; /* Espacio entre el icono y el texto */
-  max-width: 150px; /* Limitar el tamaño del icono */
+  max-width: 100px; /* Limitar el tamaño del icono */
 }
 
 .icono2 div {
@@ -511,13 +512,13 @@ h4, p {
   margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
 }
 #texto-iconos2{
-  color:#636262 ;
+  color:#dfdfdf ;
 }
 
 /* Responsividad */
-@media (max-width: 1100px) {
+@media (max-width: 1920px) {
 #contenedor-iconos {
-  padding-top: 140px; /* Reducir el padding en pantallas más pequeñas */
+  padding-top: 400px; /* Reducir el padding en pantallas más pequeñas */
   max-width: 70vh;
 }
 
@@ -529,22 +530,61 @@ h4, p {
   max-width: 80px; /* Ajustar el tamaño del icono */
 }
 h4, p {
-  font-size: 1.2em;
+  font-size: 1.7em;
+  margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
+}
+}
+
+@media (max-width: 1400px) {
+#contenedor-iconos {
+  padding-top:350px; /* Reducir el padding en pantallas más pequeñas */
+  max-width: 50vh;
+}
+
+.icono2 {
+  flex-direction: row; /* Mantener el icono a la izquierda */
+}
+
+.img-iconos-derechaDelCelu {
+  max-width: 80px; /* Ajustar el tamaño del icono */
+}
+h4, p {
+  font-size: 1em;
+  margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
+}
+}
+
+@media (max-width: 1100px) {
+#contenedor-iconos {
+  padding-top: 200px; /* Reducir el padding en pantallas más pequeñas */
+  max-width: 70vh;
+}
+
+.icono2 {
+  flex-direction: row; /* Mantener el icono a la izquierda */
+}
+
+.img-iconos-derechaDelCelu {
+  max-width: 80px; /* Ajustar el tamaño del icono */
+}
+h4, p {
+  font-size: 1em;
   margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
 }
 }
 
 
 /* Responsividad */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   #contenedor-iconos {
-    padding-top: 100px; /* Reducir el padding en pantallas más pequeñas */
+    padding-top: 120px; /* Reducir el padding en pantallas más pequeñas */
     
-  padding-left: 0px;
+     padding-left: 20px;
   }
   
   .icono2 {
     flex-direction: row; /* Mantener el icono a la izquierda */
+    margin-bottom: 35px;
   }
 
   .img-iconos-derechaDelCelu {
@@ -556,7 +596,7 @@ h4, p {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   #contenedor-iconos {
     display: contents;
   text-align: center;
@@ -578,7 +618,7 @@ h4, p {
     font-size: 1em;
     margin: 0; /* Eliminar márgenes por defecto para evitar apilamiento */
     align-items: center;
-    max-width: 75%;
+    
   }
   .textos-de-iconos1{
     max-width: 80%;
@@ -587,10 +627,7 @@ h4, p {
     align-items: center;
   }
 }
-@media (max-width: 450px) {
- 
-  
-}
+
 /* Animaciones para imágenes e iconos (sin inicializar) */
 .imagnes-lado-izquierdo,
 .icono2 {
@@ -762,11 +799,6 @@ padding-top: 90px;
 text-align: center;
 font-size: 2em;
 color: white;
-text-shadow:
-1px 1px 0 #000,
--1px 1px 0 #000,
--1px -1px 0 #000,
-1px -2px 0 #000;
 z-index: 2; /* Asegúrate de que el contenedor esté por encima */
 position: relative;
 }
@@ -855,6 +887,7 @@ position: absolute;
 
 /* Contenido del popup */
 .popup-content {
+  color: #000000;
   margin-top: 150px;
   background-color: #fff;
   padding: 30px;
@@ -865,11 +898,13 @@ position: absolute;
 }
 
 .popup-content h2 {
+  color: #000000;
   margin-top: 0;
   font-size: 24px;
 }
 
 .terms-text {
+  color: #000000;
   max-height: 300px;
   overflow-y: auto;
   margin: 15px 0;
