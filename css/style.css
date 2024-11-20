@@ -992,9 +992,11 @@ button {
 #main-content {
   display: none;
 }
+
 #politicas-copyrigth{
   font-size: 0.7em;
   z-index: 1000;
+  top: 45px;
   color: white;
   position: relative;
   justify-content: center;
@@ -1002,13 +1004,20 @@ button {
   text-align: center;
 }
 
-@media (max-width: 1100px) {
-  #politicas-copyrigth{
-    font-size: 1em;
-    top: 250px;
-  }
-  }
 
+
+  @media (max-width: 1200px) {
+    #politicas-copyrigth{
+      font-size: 0.7em;
+      z-index: 1000;
+      color: white;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      top :0px;
+    }
+    }
   @media (max-width: 1050px) {
     #politicas-copyrigth{
       font-size: 0.7em;
