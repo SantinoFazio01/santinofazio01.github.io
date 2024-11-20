@@ -223,66 +223,80 @@ body {
   }
 
 }
+
 @media (max-width: 550px) {
   .img-logo {
-    left: 0px;
+  left: 0px;
   }
+
+  #pie-img{
+  display: none;
+  }
+
+  #p-span{
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  width: 60%;
+  }
+
   .p-img-logo {
-      position: absolute;
-      top: 19%; /* Posicionada en la parte superior de la página */
-      text-align: center;
-      left: 0; /* Alineada al lado derecho de la página */
-      padding-left: 10px;
-      width: 210px;
-      height: auto; /* Mantiene la proporción de la imagen */
-  
-    }
-    #botones-descarga{
-      padding-left: 30px;
-      
+  position: absolute;
+  top: 195px; /* Posicionada en la parte superior de la página */
+  text-align: left;
+  left: 0;
+  padding-left: 30px;
+  width: 80%;
+  height: auto; /* Mantiene la proporción de la imagen */
+
+  }
+  #botones-descarga{
+    padding-left: 30px;
+    
   }
   .boton-logo{
       position: relative;
-      top: 295px;
+      top: 135px;
       font-size: 0.6em;
       margin-left: 0;
   }
 }
 
-@media (max-width:450px) {
+  @media (max-width:470px) {
   .img-logo {
-      position: absolute;
-      top: 7%; /* Posicionada en la parte superior de la página */
-      padding-left: 40px;
-      width: 20%;
-      height: auto; /* Mantiene la proporción de la imagen */
-  
-    }
-  #pie-img{
-      display: none;
+  position: absolute;
+  top: 7%; /* Posicionada en la parte superior de la página */
+  padding-left: 40px;
+  width: 20%;
+  height: auto; /* Mantiene la proporción de la imagen */
+
   }
+
+  #pie-img{
+  display: none;
+  }
+
   #p-span{
   display: grid;
   font-family: 'Montserrat', sans-serif;
   width: 50%;
   }
   .p-img-logo {
-      position: absolute;
-      top: 160px; /* Posicionada en la parte superior de la página */
-      text-align: left;
-      left: 0;
-      padding-left: 30px;
-      width: 60%;
-      height: auto; /* Mantiene la proporción de la imagen */
-  
-    }
+  position: absolute;
+  top: 160px; /* Posicionada en la parte superior de la página */
+  text-align: left;
+  left: 0;
+  padding-left: 10px;
+  width: 90%;
+  height: auto; /* Mantiene la proporción de la imagen */
+
+  }
   #botones-descarga{
-      padding-left: 25px;
+  padding-left: 25px;
   }
   .boton-logo{
-      position: relative;
-      top: 135px;
-      font-size: 0.3em;
+  position: relative;
+  top: 100px;
+  font-size: 0.3em;
   }
 }
 
@@ -895,22 +909,30 @@ position: absolute;
   width: 70%;
   max-width: 600px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 80vh; /* Limita la altura del popup al 80% de la pantalla */
+  overflow: hidden;
 }
 
+/* Título */
 .popup-content h2 {
   color: #000000;
   margin-top: 0;
   font-size: 24px;
 }
 
+/* Contenido de los términos */
 .terms-text {
   color: #000000;
-  max-height: 300px;
   overflow-y: auto;
   margin: 15px 0;
   text-align: left;
+  max-height: 50vh; /* Asegura que el contenido tenga un tamaño adecuado */
 }
 
+/* Estilo de los botones */
 button {
   padding: 10px 20px;
   margin: 10px 5px;
@@ -930,9 +952,72 @@ button {
   color: white;
 }
 
+/* Modo vertical */
+@media screen and (orientation: portrait) {
+  .popup-content {
+    max-height: 90vh; /* Se asegura que el contenido del popup se ajuste al 90% de la pantalla */
+    padding: 20px; /* Menos padding para que el contenido ocupe menos espacio */
+  }
+
+  .popup-content h2 {
+    font-size: 22px; /* Ajuste de tamaño del título */
+  }
+
+  .terms-text {
+    max-height: 50vh; /* Ajusta el contenido de los términos al 50% de la altura de la pantalla */
+  }
+}
+
+/* Modo horizontal */
+@media screen and (orientation: landscape) {
+  .popup-content {
+    margin-top: 120px; /* Reduce el margen superior */
+    height: 60%; /* Controla la altura del popup en pantalla horizontal */
+    max-height: 60vh; /* Ajusta el tamaño máximo para que el popup no sea demasiado grande */
+    padding: 20px; /* Reduce el padding en modo horizontal */
+  }
+
+  .popup-content h2 {
+    font-size: 18px; /* Ajuste para un título más pequeño en pantallas horizontales */
+    
+  }
+
+  .terms-text {
+    max-height: 35vh; /* Reduce la altura máxima del contenido */
+  }
+  
+  
+}
 /* Oculta el contenido principal hasta aceptar los términos */
 #main-content {
   display: none;
 }
+#politicas-copyrigth{
+  font-size: 0.7em;
+  z-index: 1000;
+  color: white;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+@media (max-width: 1100px) {
+  #politicas-copyrigth{
+    font-size: 1em;
+    top: 250px;
+  }
+  }
 
+  @media (max-width: 1050px) {
+    #politicas-copyrigth{
+      font-size: 0.7em;
+      z-index: 1000;
+      color: white;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      top :0px;
+    }
+    }

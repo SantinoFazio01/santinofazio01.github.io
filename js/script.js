@@ -77,12 +77,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Funcionalidad del botón de aceptar
   acceptButton.addEventListener("click", () => {
-      termsPopup.style.display = "none"; // Oculta el popup
-      mainContent.style.display = "block"; // Muestra el contenido principal
+    termsPopup.style.display = "none"; // Oculta el popup
+    mainContent.style.display = "block"; // Muestra el contenido principal
   });
 
   // Funcionalidad del botón de rechazo
   rejectButton.addEventListener("click", () => {
-      alert("Debes aceptar los Términos y Condiciones para acceder a RanchApp.");
+    alert("Debes aceptar los Términos y Condiciones para acceder a RanchApp.");
   });
+
+  // Función para ajustar el layout y hacer que los botones sean visibles
+  const adjustLayout = () => {
+    const termsText = document.querySelector('.terms-text');
+
+    if (window.innerHeight > window.innerWidth) {
+      // En modo vertical, el contenido debe ser más pequeño y visible desde el inicio
+      termsText.style.maxHeight = "200px"; // Reduce el tamaño del área de texto para asegurar visibilidad de los botones
+    } else {
+      // En modo horizontal, el contenido puede ocupar más espacio
+      termsText.style.maxHeight = "300px"; // Se asegura de que el contenido no ocupe toda la pantalla
+    }
+  };
+
+  // Ajusta el layout al cargar la página
+  adjustLayout();
+
+  // Escucha cambios de tamaño o rotación
+  window.addEventListener("resize", adjustLayout);
 });
+
+
